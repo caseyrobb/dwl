@@ -1,0 +1,101 @@
+{
+  "layer": "top",
+  "position": "top",
+  "height": 24,
+  "modules-left": [
+    "dwl/tags",
+    "dwl/window"
+  ],
+  "modules-center": [
+    "clock"
+  ],
+  "modules-right": [
+    "network",
+    "custom/packages",
+    "custom/weather",
+    "backlight",
+    "pulseaudio",
+    "battery",
+    "tray"
+  ],
+  "dwl/window": {
+    "format": "{title}",
+    "max-length": 50
+  },
+  "dwl/tags": {
+    "tag-labels": [
+      "󱄛", "", "󰨞", "", "󰙯", "󱢺", "󰣛", "󰓓", "󰚌"
+    ]
+  },
+  "tray": {
+    "icon-size": 18,
+    "spacing": 15
+  },
+  "clock": {
+    "format": "{:%a %b %e  %R}",
+    "interval": 30
+  },
+  "battery": {
+    "bat": "BAT0",
+    "states": {
+      "full": 98,
+      "good": 90,
+      "normal": 98,
+      "warning": 20,
+      "critical": 20
+    },
+    "format": "{icon}   {capacity}%",
+    "format-good": "{icon}   {capacity}%",
+    "format-full": "   {capacity}%",
+    "format-icons": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "full-at": 98,
+    "interval": 30
+  },
+  "network": {
+    "interface": "wlp3s0",
+    "format-wifi": "  {essid}",
+    "tooltip-format-wifi": "{ipaddr}/{cidr}",
+    "format-disconnected": "睊 Disconnected",
+    "interval": 60
+  },
+  "backlight": {
+    "device": "intel_backlight",
+    "format": "{icon}  {percent}%  ",
+    "format-icons": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "interval": 60
+  },
+  "custom/packages": {
+    "format": " {}  ",
+    "exec": "~/.local/bin/packages.sh",
+    "interval": "300"
+  },
+  "custom/weather": {
+    "format": " {} ",
+    "exec": "~/.local/bin/weather.sh",
+    "interval": "1200",
+    "on-click": "notify-send \"$(curl -s wttr.in/Calgary?T1 | head -17)\""
+  },
+  "pulseaudio": {
+    "format": "{icon}  {volume}%  ",
+    "format-bluetooth": "  {volume}%  ",
+    "format-muted": "婢  Mute  ",
+    "interval": 60,
+    "format-icons": {
+      "default": [
+        ""
+      ]
+    },
+    "on-click": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"
+  }
+}

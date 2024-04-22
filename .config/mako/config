@@ -1,0 +1,23 @@
+font=FiraCode Nerd Font 8
+
+layer=overlay
+anchor=top-right
+background-color=#2e3440dd
+text-color=#e5e9f0
+min_width=100
+width=910
+height=350
+padding=15
+margin=10
+progress-color= source #60606080
+icon-path=/usr/share/icons/Papirus-Dark
+max-icon-size=150
+
+border-size=2
+border-radius=4
+border-color=#eceff4
+
+default-timeout=10000
+
+[urgency=high]
+ignore-timeout=1

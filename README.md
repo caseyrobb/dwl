@@ -12,6 +12,10 @@ Here are the patches I have applied:
 - [movestack](https://codeberg.org/dwl/dwl-patches/wiki/movestack)
 - [pertag](https://codeberg.org/dwl/dwl-patches/wiki/pertag)
 
+### Screenshot
+
+![alt text](https://raw.githubusercontent.com/caseyrobb/dwl/master/dwl-20240422.png)
+
 # dwl - dwm for Wayland
 
 Join us on our IRC channel: [#dwl on Libera Chat]  

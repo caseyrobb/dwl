@@ -135,7 +135,6 @@ static const enum libinput_config_tap_button_map button_map = LIBINPUT_CONFIG_TA
 
 /* commands */
 static const char *termcmd[] = { "footclient", NULL };
-/*static const char *menucmd[] = { "bemenu-run", NULL };*/
 static const char *menucmd[] = { "wofi", NULL };
 
 static const Key keys[] = {

@@ -14,7 +14,7 @@ Here are the patches I have applied:
 
 ### Screenshot
 
-![alt text](https://raw.githubusercontent.com/caseyrobb/dwl/master/dwl-20240422.png)
+![alt text](https://raw.githubusercontent.com/caseyrobb/dwl/master/dwl-20240510.png)
 
 # dwl - dwm for Wayland
 

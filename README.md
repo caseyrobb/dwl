@@ -11,6 +11,7 @@ Here are the patches I have applied:
 - [master-right](https://codeberg.org/dwl/dwl-patches/wiki/master-right)
 - [movestack](https://codeberg.org/dwl/dwl-patches/wiki/movestack)
 - [pertag](https://codeberg.org/dwl/dwl-patches/wiki/pertag)
+- [gapps](https://codeberg.org/dwl/dwl-patches/wiki/gapps)
 
 ### Screenshot
 
